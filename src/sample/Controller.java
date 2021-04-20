@@ -46,7 +46,7 @@ public class Controller {
         }
 
         for(char c : input_from_user.toCharArray()){
-            if (!((c >= 65 && c <= 90)||(c>=97&&c<=122))){
+            if (!((c >= 65 && c <= 90)||(c>=97&&c<=122)||(c == ' '))){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Invalid Input");
                 alert.setContentText("Error, special character detected");
@@ -77,7 +77,7 @@ public class Controller {
         }
 
         for(char c : input_from_user.toCharArray()){
-            if (!((c >= 65 && c <= 90)||(c>=97&&c<=122))){
+            if (!((c >= 65 && c <= 90)||(c>=97&&c<=122)||(c ==' '))){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Invalid Input");
                 alert.setContentText("Error, special character detected");
