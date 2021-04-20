@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="68.0" layoutY="32.0" prefHeight="353.0" prefWidth="462.0" spacing="30.0">
+         <children>
+            <Label fx:id="output" alignment="CENTER" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="30.0" top="25.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="text_input" prefHeight="26.0" prefWidth="334.0" promptText="Input your text" />
+            <TextField fx:id="input_user_shifter" prefHeight="26.0" prefWidth="398.0" promptText="shifter " />
+            <HBox id="button_hbox" alignment="CENTER" prefHeight="28.0" prefWidth="402.0" spacing="150.0" stylesheets="@style.css">
+               <children>
+                  <Button fx:id="encode_button" mnemonicParsing="false" onMouseClicked="#encoder" prefHeight="25.0" prefWidth="80.0" text="Encode" />
+                  <Button id="hbox" fx:id="decode_button" mnemonicParsing="false" onMouseClicked="#decoder" prefHeight="25.0" prefWidth="80.0" text="Decode" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
