@@ -77,20 +77,20 @@ public class Controller {
         }
 
         for(char c : input_from_user.toCharArray()){
-            if (!((c >= 65 && c <= 90)||(c>=97&&c<=122)||(c ==' '))){
+            if (!Character.isLetter(c)){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Invalid Input");
                 alert.setContentText("Error, special character detected");
 
                 alert.show();
-                input_from_user = "-1";
+                //input_from_user = "-1";
                 break;
             }
         }
-        if(input_from_user != "-1"){
-            output.setText(Caesar_Cipher.caesar_decode(input_from_user,input_from_user_shifter));
 
-        }
+       // if(input_from_user != "-1"){
+        output.setText(Caesar_Cipher.caesar_decode(input_from_user,input_from_user_shifter));
+       // }
 
     }
 
